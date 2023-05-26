@@ -1,0 +1,349 @@
+{% extends 'dashbase.html' %}
+{% load static %}
+{% block content %}
+<div class="main-content">
+    <section class="section">
+        <br><br><br>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">            
+                    <div class="card-body">
+                        <div class="row mt-4">
+                            <div class="col-12 col-lg-8 offset-lg-2">
+                                <div class="wizard-steps">
+                                    <div class="wizard-step wizard-step-active">
+                                        <div class="wizard-step-icon">
+                                            <i class="far fa-user"></i>
+                                        </div>
+                                        <div class="wizard-step-label">
+                                            Student Account create
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <form class="needs-validation" novalidate="">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student Name</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Student name?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student email</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Student email?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student email</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Student email?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student phone number</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Student phone number?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student gender</label>
+                                            <select class="form-control " required="">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                What's Student gender?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student religion</label>
+                                            <select class="form-control " required="">
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                What's Student religion?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                       
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student photo</label>
+                                            <input type="file" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                    Student photo?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student Aadhar</label>
+                                            <input type="file" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                Student Aadhar?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student Signature</label>
+                                            <input type="file" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                Student Signature?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                       
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student address</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Student address?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Student state</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Student state?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>City</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's City?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                       
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Pincode</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's pincode?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Guardian name</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Guardian name?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Guardian contact number</label>
+                                            <input type="tel" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Guardian contact number?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                       
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Relationship of Guardian</label>
+                                            <select class="form-control " required="">
+                                                <option>ooo</option>
+                                                <option>ooo</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                What's Relationship of Guardian?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Guardian Signature</label>
+                                            <input type="file" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Guardian Signature?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>School name</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's School name?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                       
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>School location</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's School location?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>SSLC total persantage</label>
+                                            <input type="number" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's SSLC total persantage?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>SSLC pass out yaer</label>
+                                            <input type="date" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's SSLC pass out yaer?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                       
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Higher secondary school name</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Higher secondary school name?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Higher secondary school location</label>
+                                            <input type="text" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Higher secondary school location?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Higher secondary school total mark</label>
+                                            <input type="number" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Higher secondary school total mark?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                       
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Higher secondary school pass out year</label>
+                                            <input type="number" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Higher secondary school pass out year?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label>Higher secondary school certificate upload</label>
+                                            <input type="file" class="form-control" required="">
+                                            <div class="invalid-feedback">
+                                                What's Higher secondary school certificate upload?
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

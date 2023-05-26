@@ -1,0 +1,293 @@
+{% extends 'dashbase.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="main-content">
+    <section class="section">
+        <br><br><br>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">            
+                    <div class="card-body">
+                        <div class="row mt-4">
+                            <div class="col-12 col-lg-8 offset-lg-2">
+                                <div class="wizard-steps">
+                                    <div class="wizard-step wizard-step-active">
+                                        <div class="wizard-step-icon">
+                                            <i class="far fa-user"></i>
+                                        </div>
+                                        <div class="wizard-step-label">
+                                            Staff Account create
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <form method="POST" enctype="multipart/form-data" novalidate>
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">{{ form.name|as_crispy_field }}</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.guardian_name|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.email|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.date_of_birth|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.contact_number|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.gender|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>                                       
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.religion|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.photo|as_crispy_field }}
+                                        </div>
+                                    </div> -->
+                                <!-- </div> -->
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.address|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.state|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>                                          
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.city|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        {{ form.pincode|as_crispy_field }}
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        {{ form.photo|as_crispy_field }}
+                                    </div>
+                                </div>  
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.designation|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>                                     
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                {{ form.subject|as_crispy_field }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.languages|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.sslc_certificate_upload|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>   
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.sslc_percentage|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>                                    
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <div class="form-group">
+                                                {{ form.plustwo_certificate_upload|as_crispy_field }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.plustwo_percentage|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.degree_certificate_upload|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>   
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.plustwo_certificate_upload|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>                                      
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.plustwo_percentage|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.degree_certificate_upload|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>                                      
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.degree_persentage|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.b_ed_certificate_upload|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.b_ed_persentage|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>                                     
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.m_ed_certificate_upload|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.m_ed_persentage|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            {{ form.set_certificate_upload|as_crispy_field }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        {{ form.net_certificate_upload|as_crispy_field }}
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        {{ form.k_tet_certificate_upload|as_crispy_field }}
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        {{ form.experience|as_crispy_field }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-body">
+                                        {{ form.cv_upload|as_crispy_field }}
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        {{ form.resume_upload|as_crispy_field }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-center">
+                                <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
